@@ -77,7 +77,7 @@ public class WaitingRoom extends JFrame {
 						lblNewLabel_3.setIcon(new ImageIcon("C:\\Users\\aker\\workspace\\PrototypeA\\map2.jpg"));
 					}
 					if(comboBox.getSelectedItem()=="\u91D1\u9B5A\u5BB6"){
-						lblNewLabel_3.setIcon(new ImageIcon("C:\\Users\\aker\\workspace\\PrototypeA\\map2.jpg"));
+						lblNewLabel_3.setIcon(new ImageIcon("C:\\Users\\aker\\workspace\\PrototypeA\\hqdefault.jpg"));
 					}
 				}
 			}
