@@ -6,6 +6,9 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseMotionAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseAdapter;
 
 public class GameView extends JFrame {
 
@@ -66,6 +69,22 @@ public class GameView extends JFrame {
 		setContentPane(contentPane);
 		
 		JPanel panel = new JPanel();
+		panel.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				System.out.println("mouse clicked");
+			}
+			public void mouseReleased(MouseEvent arg0) {
+				System.out.println("mouse released");
+			}
+			
+		});
+		panel.addMouseMotionListener(new MouseMotionAdapter() {
+			@Override
+			public void mouseDragged(MouseEvent mouseEvent) {
+				System.out.println("mouse dragging");
+			}
+		});
 		
 		contentPane.add(panel, BorderLayout.CENTER);
 	}
